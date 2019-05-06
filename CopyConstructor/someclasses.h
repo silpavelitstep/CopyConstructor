@@ -54,8 +54,10 @@ class SecondObj {
 	
 public:
 	int valueSecond;
-	First fst;
+	First *fst;
 	SecondObj(int i);
+	SecondObj(const SecondObj &sdbj);
+	SecondObj func(SecondObj);
 	~SecondObj();
 };
 #endif SOMECLASES_H

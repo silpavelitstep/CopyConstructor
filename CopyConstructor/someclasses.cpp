@@ -21,10 +21,22 @@ First::First(int i):valueFirst(i) {
 First::~First() {
 	cout << "\t~First()\n";
 }
-SecondObj::SecondObj(int i):fst(i){
+SecondObj::SecondObj(int i){
+	fst = new First(i);
 	cout << "SecondObj()\n";
 	
 }
+
+SecondObj::SecondObj(const SecondObj &sdbj){
+	fst = new First(sdbj.fst->valueFirst);
+	cout << "copy__ SecondObj()\n";
+}
+
 SecondObj::~SecondObj() {
 	cout << "\t~SecondObj()\n";
+	delete fst;
+}
+SecondObj SecondObj::func(SecondObj sdbj) {
+	cout << "RETURN SECOND OBJ FUNC:\n";
+	return sdbj;
 }
