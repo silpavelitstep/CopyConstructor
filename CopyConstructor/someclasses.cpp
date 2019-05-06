@@ -1,5 +1,5 @@
 #include <iostream>
-#include "someclases.h"
+#include "someclasses.h"
 using namespace std;
 A::A() {cout << "cons A()\n";}
 A::~A() { cout << "des ~A()\n";}
