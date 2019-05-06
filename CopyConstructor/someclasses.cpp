@@ -15,3 +15,16 @@ F::F() { cout << "cons F()\n"; }
 F::~F() { cout << "des ~F()\n"; }
 G::G() { cout << "cons G()\n"; }
 G::~G() { cout << "des ~G()\n"; }
+First::First(int i):valueFirst(i) {
+	cout << "First()\n";
+}
+First::~First() {
+	cout << "\t~First()\n";
+}
+SecondObj::SecondObj(int i):fst(i){
+	cout << "SecondObj()\n";
+	
+}
+SecondObj::~SecondObj() {
+	cout << "\t~SecondObj()\n";
+}

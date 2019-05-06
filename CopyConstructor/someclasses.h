@@ -41,5 +41,21 @@ public:
 	G();
 	~G();
 };
+//class First and Second to show work of copy contructor
+class First {
+	
+public:
+	int valueFirst;
+	First(int i);
+	~First();
 
+};
+class SecondObj {
+	
+public:
+	int valueSecond;
+	First fst;
+	SecondObj(int i);
+	~SecondObj();
+};
 #endif SOMECLASES_H
